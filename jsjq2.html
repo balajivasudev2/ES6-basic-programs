@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+</script>
+
+</head>
+
+<body>
+<div id="aa" style="display:none;">aa,,bb,,cc</div>
+<div id="bb"></div>
+<script>
+  var text=$('#aa').html().split(',,');
+  var text1=[];
+  for(i=0;i<text.length;i++)
+  {
+    text1.push('<span class="ab">'+text[i]+'</span>');
+  }
+
+  for( const i=0;i<text1.length;i++)
+  {
+    $('#bb').html(text1[i]).click();
+  }
+ </script>
+</body>
+</html>
